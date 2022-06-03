@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuperSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="password" value="12345"/>
+    <parameter name="browser" value="Edge"/>
+    <parameter name="username" value="mahadev"/>
+    <classes>
+      <class name="com.vyasa.testng.dataprovider.CrossBrowserTesting">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="verifyUserLogon"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.vyasa.testng.dataprovider.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [SuperSuite] -->

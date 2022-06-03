@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite (1)]" guice-stage="DEVELOPMENT">
+  <packages>
+    <package name="com.vyasa.testng.automation"/>
+  </packages>
+  <test thread-count="5" name="GroupsSuite(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.vyasa.testng.automation.TestNGAutomation">
+        <methods>
+          <include name="verifyNewArrivalsDisplayed"/>
+          <include name="verifySliderHasThreeBooks"/>
+        </methods>
+      </class> <!-- com.vyasa.testng.automation.TestNGAutomation -->
+    </classes>
+  </test> <!-- GroupsSuite(failed) -->
+</suite> <!-- Failed suite [Suite (1)] -->
